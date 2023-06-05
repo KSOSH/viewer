@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 					'src/all/js/textversion.js',
 					'src/pdf_viewer/js/pdf.js'
 				],
-				dest: 'dist/viewer/pdf_viewer/ppdf_viewer.js'
+				dest: 'dist/viewer/pdf_viewer/pdf_viewer.js'
 			}
 		},
 		uglify: {
@@ -348,6 +348,12 @@ module.exports = function(grunt) {
 				src: '**',
 				dest: 'dist/viewer/pdf_viewer/pdf.js/web/images/',
 			},
+			assets: {
+				expand: true,
+				cwd: 'src/assets',
+				src: '**',
+				dest: 'dist/assets/',
+			}
 		},
 		clean: {
 			pdf_viewer: [

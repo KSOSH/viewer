@@ -10,27 +10,25 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		#docTitle {
-			font-family: Consolas, "Courier New", monospace !important;
+		min-height: 36px;
+		align-items: center;
+		#docTitle,
+		#downloadTag {
 			font-size: 16px !important;
 			white-space: nowrap !important;
-			text-overflow: ellipsis !important;
-			overflow: hidden !important;
 			padding-top: 5px !important;
 			padding-bottom: 5px !important;
-			//height: 20px !important;
 			line-height: 1 !important;
+			overflow: hidden !important;
+			color: white;
+		}
+		#docTitle {
+			font-family: Consolas, "Courier New", monospace !important;
+			text-overflow: ellipsis !important;
 			flex: 1;
-			min-height: 26px;
 		}
 		#downloadTag {
 			font-family: Consolas, "Courier New", monospace !important;
-			font-size: 16px !important;
-			white-space: nowrap !important;
-			overflow: hidden !important;
-			padding-top: 5px !important;
-			padding-bottom: 5px !important;
-			line-height: 1 !important;
 			display: none;
 			min-width: unset;
 			border-radius: 2px;
@@ -38,10 +36,6 @@
 			margin: 0;
 			-webkit-padding-start: 36px;
 			padding-inline-start: 36px;
-			height: auto;
-			min-height: 26px;
-			width: auto;
-			color: white;
 			text-decoration: none !important;
 			&[href] {
 				display: inline-block;
@@ -67,9 +61,17 @@
 		top: 62px;
 	}
 }
-
+#toolbarViewer {
+	border-left: 1px solid var(--body-bg-color);
+	border-right: 1px solid var(--body-bg-color);
+}
 .hidden {
 	display: none !important;
+}
+#toolbarContainer {
+	&.viewer_error {
+		display: none;
+	}
 }
 .viewer_error {
 	.pdfViewer {

@@ -5,7 +5,7 @@ html(dir="ltr" mozdisallowselectionprint)
 		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 		meta(name='google' content='notranslate')
 		title PDF.js viewer
-		link(rel='stylesheet' href="pdf.js/web/pdfviewer.css?" + hash)
+		link(rel='stylesheet' href="pdf_main.css?" + hash)
 		link(rel='resource' type='application/l10n' href='pdf.js/web/locale/locale.properties')
 	body.viewerEmbeded(tabindex="1")
 		// outerContainer
@@ -286,4 +286,4 @@ html(dir="ltr" mozdisallowselectionprint)
 		// End printContainer
 		input#fileInput.hidden(type='file')
 		script(src='pdf.js/build/pdf.js')
-		script(src='pdf.js/web/pdfviewer.js?' + hash)
+		script(src='pdf_viewer.js?' + hash)

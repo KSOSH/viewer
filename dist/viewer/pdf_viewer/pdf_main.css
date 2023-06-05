@@ -77,7 +77,7 @@
   top: 0;
 }
 :root {
-  --error-document: url('images/pdf_icon_error.png');
+  --error-document: url('pdf.js/web/images/pdf_icon_error.png');
   --error-color: black;
   --annotation-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --input-focus-border-color: Highlight;
@@ -672,11 +672,11 @@
   --freetext-line-height: 1.35;
   --freetext-padding: 2px;
   --editorFreeText-editing-cursor: text;
-  --editorInk-editing-cursor: url(images/cursor-editorInk.svg) 0 16, pointer;
+  --editorInk-editing-cursor: url(pdf.js/web/images/cursor-editorInk.svg) 0 16, pointer;
 }
 @media (min-resolution: 1.1dppx) {
   :root {
-    --editorFreeText-editing-cursor: url(images/cursor-editorFreeText.svg) 0 16,
+    --editorFreeText-editing-cursor: url(pdf.js/web/images/cursor-editorFreeText.svg) 0 16,
 			text;
   }
 }
@@ -804,7 +804,7 @@
   --pdfViewer-padding-bottom: 0;
   --page-margin: 1px auto -8px;
   --page-border: 9px solid transparent;
-  --page-border-image: url(images/shadow.png) 9 9 repeat;
+  --page-border-image: url(pdf.js/web/images/shadow.png) 9 9 repeat;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --scale-factor: 1;
 }
@@ -952,7 +952,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: url("images/loading-icon.gif") center no-repeat;
+  background: url("pdf.js/web/images/loading-icon.gif") center no-repeat;
   z-index: 5;
 }
 .pdfViewer .page .loadingIcon.notVisible {
@@ -1025,45 +1025,45 @@
   --dialog-button-border: none;
   --dialog-button-bg-color: rgba(12, 12, 13, 0.1);
   --dialog-button-hover-bg-color: rgba(12, 12, 13, 0.3);
-  --loading-icon: url(images/loading.svg);
-  --treeitem-expanded-icon: url(images/treeitem-expanded.svg);
-  --treeitem-collapsed-icon: url(images/treeitem-collapsed.svg);
-  --toolbarButton-editorFreeText-icon: url(images/toolbarButton-editorFreeText.svg);
-  --toolbarButton-editorInk-icon: url(images/toolbarButton-editorInk.svg);
-  --toolbarButton-menuArrow-icon: url(images/toolbarButton-menuArrow.svg);
-  --toolbarButton-sidebarToggle-icon: url(images/toolbarButton-sidebarToggle.svg);
-  --toolbarButton-secondaryToolbarToggle-icon: url(images/toolbarButton-secondaryToolbarToggle.svg);
-  --toolbarButton-pageUp-icon: url(images/toolbarButton-pageUp.svg);
-  --toolbarButton-pageDown-icon: url(images/toolbarButton-pageDown.svg);
-  --toolbarButton-zoomOut-icon: url(images/toolbarButton-zoomOut.svg);
-  --toolbarButton-zoomIn-icon: url(images/toolbarButton-zoomIn.svg);
-  --toolbarButton-presentationMode-icon: url(images/toolbarButton-presentationMode.svg);
-  --toolbarButton-print-icon: url(images/toolbarButton-print.svg);
-  --toolbarButton-openFile-icon: url(images/toolbarButton-openFile.svg);
-  --toolbarButton-download-icon: url(images/toolbarButton-download.svg);
-  --toolbarButton-bookmark-icon: url(images/toolbarButton-bookmark.svg);
-  --toolbarButton-viewThumbnail-icon: url(images/toolbarButton-viewThumbnail.svg);
-  --toolbarButton-viewOutline-icon: url(images/toolbarButton-viewOutline.svg);
-  --toolbarButton-viewAttachments-icon: url(images/toolbarButton-viewAttachments.svg);
-  --toolbarButton-viewLayers-icon: url(images/toolbarButton-viewLayers.svg);
-  --toolbarButton-currentOutlineItem-icon: url(images/toolbarButton-currentOutlineItem.svg);
-  --toolbarButton-search-icon: url(images/toolbarButton-search.svg);
-  --findbarButton-previous-icon: url(images/findbarButton-previous.svg);
-  --findbarButton-next-icon: url(images/findbarButton-next.svg);
-  --secondaryToolbarButton-firstPage-icon: url(images/secondaryToolbarButton-firstPage.svg);
-  --secondaryToolbarButton-lastPage-icon: url(images/secondaryToolbarButton-lastPage.svg);
-  --secondaryToolbarButton-rotateCcw-icon: url(images/secondaryToolbarButton-rotateCcw.svg);
-  --secondaryToolbarButton-rotateCw-icon: url(images/secondaryToolbarButton-rotateCw.svg);
-  --secondaryToolbarButton-selectTool-icon: url(images/secondaryToolbarButton-selectTool.svg);
-  --secondaryToolbarButton-handTool-icon: url(images/secondaryToolbarButton-handTool.svg);
-  --secondaryToolbarButton-scrollPage-icon: url(images/secondaryToolbarButton-scrollPage.svg);
-  --secondaryToolbarButton-scrollVertical-icon: url(images/secondaryToolbarButton-scrollVertical.svg);
-  --secondaryToolbarButton-scrollHorizontal-icon: url(images/secondaryToolbarButton-scrollHorizontal.svg);
-  --secondaryToolbarButton-scrollWrapped-icon: url(images/secondaryToolbarButton-scrollWrapped.svg);
-  --secondaryToolbarButton-spreadNone-icon: url(images/secondaryToolbarButton-spreadNone.svg);
-  --secondaryToolbarButton-spreadOdd-icon: url(images/secondaryToolbarButton-spreadOdd.svg);
-  --secondaryToolbarButton-spreadEven-icon: url(images/secondaryToolbarButton-spreadEven.svg);
-  --secondaryToolbarButton-documentProperties-icon: url(images/secondaryToolbarButton-documentProperties.svg);
+  --loading-icon: url(pdf.js/web/images/loading.svg);
+  --treeitem-expanded-icon: url(pdf.js/web/images/treeitem-expanded.svg);
+  --treeitem-collapsed-icon: url(pdf.js/web/images/treeitem-collapsed.svg);
+  --toolbarButton-editorFreeText-icon: url(pdf.js/web/images/toolbarButton-editorFreeText.svg);
+  --toolbarButton-editorInk-icon: url(pdf.js/web/images/toolbarButton-editorInk.svg);
+  --toolbarButton-menuArrow-icon: url(pdf.js/web/images/toolbarButton-menuArrow.svg);
+  --toolbarButton-sidebarToggle-icon: url(pdf.js/web/images/toolbarButton-sidebarToggle.svg);
+  --toolbarButton-secondaryToolbarToggle-icon: url(pdf.js/web/images/toolbarButton-secondaryToolbarToggle.svg);
+  --toolbarButton-pageUp-icon: url(pdf.js/web/images/toolbarButton-pageUp.svg);
+  --toolbarButton-pageDown-icon: url(pdf.js/web/images/toolbarButton-pageDown.svg);
+  --toolbarButton-zoomOut-icon: url(pdf.js/web/images/toolbarButton-zoomOut.svg);
+  --toolbarButton-zoomIn-icon: url(pdf.js/web/images/toolbarButton-zoomIn.svg);
+  --toolbarButton-presentationMode-icon: url(pdf.js/web/images/toolbarButton-presentationMode.svg);
+  --toolbarButton-print-icon: url(pdf.js/web/images/toolbarButton-print.svg);
+  --toolbarButton-openFile-icon: url(pdf.js/web/images/toolbarButton-openFile.svg);
+  --toolbarButton-download-icon: url(pdf.js/web/images/toolbarButton-download.svg);
+  --toolbarButton-bookmark-icon: url(pdf.js/web/images/toolbarButton-bookmark.svg);
+  --toolbarButton-viewThumbnail-icon: url(pdf.js/web/images/toolbarButton-viewThumbnail.svg);
+  --toolbarButton-viewOutline-icon: url(pdf.js/web/images/toolbarButton-viewOutline.svg);
+  --toolbarButton-viewAttachments-icon: url(pdf.js/web/images/toolbarButton-viewAttachments.svg);
+  --toolbarButton-viewLayers-icon: url(pdf.js/web/images/toolbarButton-viewLayers.svg);
+  --toolbarButton-currentOutlineItem-icon: url(pdf.js/web/images/toolbarButton-currentOutlineItem.svg);
+  --toolbarButton-search-icon: url(pdf.js/web/images/toolbarButton-search.svg);
+  --findbarButton-previous-icon: url(pdf.js/web/images/findbarButton-previous.svg);
+  --findbarButton-next-icon: url(pdf.js/web/images/findbarButton-next.svg);
+  --secondaryToolbarButton-firstPage-icon: url(pdf.js/web/images/secondaryToolbarButton-firstPage.svg);
+  --secondaryToolbarButton-lastPage-icon: url(pdf.js/web/images/secondaryToolbarButton-lastPage.svg);
+  --secondaryToolbarButton-rotateCcw-icon: url(pdf.js/web/images/secondaryToolbarButton-rotateCcw.svg);
+  --secondaryToolbarButton-rotateCw-icon: url(pdf.js/web/images/secondaryToolbarButton-rotateCw.svg);
+  --secondaryToolbarButton-selectTool-icon: url(pdf.js/web/images/secondaryToolbarButton-selectTool.svg);
+  --secondaryToolbarButton-handTool-icon: url(pdf.js/web/images/secondaryToolbarButton-handTool.svg);
+  --secondaryToolbarButton-scrollPage-icon: url(pdf.js/web/images/secondaryToolbarButton-scrollPage.svg);
+  --secondaryToolbarButton-scrollVertical-icon: url(pdf.js/web/images/secondaryToolbarButton-scrollVertical.svg);
+  --secondaryToolbarButton-scrollHorizontal-icon: url(pdf.js/web/images/secondaryToolbarButton-scrollHorizontal.svg);
+  --secondaryToolbarButton-scrollWrapped-icon: url(pdf.js/web/images/secondaryToolbarButton-scrollWrapped.svg);
+  --secondaryToolbarButton-spreadNone-icon: url(pdf.js/web/images/secondaryToolbarButton-spreadNone.svg);
+  --secondaryToolbarButton-spreadOdd-icon: url(pdf.js/web/images/secondaryToolbarButton-spreadOdd.svg);
+  --secondaryToolbarButton-spreadEven-icon: url(pdf.js/web/images/secondaryToolbarButton-spreadEven.svg);
+  --secondaryToolbarButton-documentProperties-icon: url(pdf.js/web/images/secondaryToolbarButton-documentProperties.svg);
 }
 [dir="rtl"]:root {
   --dir-factor: -1;
@@ -1104,7 +1104,7 @@
     --doorhanger-separator-color: #5c5c61;
     --dialog-button-bg-color: #5c5c61;
     --dialog-button-hover-bg-color: #737373;
-    --loading-icon: url(images/loading-dark.svg);
+    --loading-icon: url(pdf.js/web/images/loading-dark.svg);
   }
 }
 @media screen and (forced-colors: active) {
@@ -2714,38 +2714,34 @@ dialog :link {
       flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  min-height: 36px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.viewerEmbeded .toolbarTitle #docTitle,
+.viewerEmbeded .toolbarTitle #downloadTag {
+  font-size: 16px !important;
+  white-space: nowrap !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  line-height: 1 !important;
+  overflow: hidden !important;
+  color: white;
 }
 .viewerEmbeded .toolbarTitle #docTitle {
   font-family: Consolas, "Courier New", monospace !important;
-  font-size: 16px !important;
-  white-space: nowrap !important;
   text-overflow: ellipsis !important;
-  overflow: hidden !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  line-height: 1 !important;
   -ms-flex: 1;
       flex: 1;
-  min-height: 26px;
 }
 .viewerEmbeded .toolbarTitle #downloadTag {
   font-family: Consolas, "Courier New", monospace !important;
-  font-size: 16px !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  line-height: 1 !important;
   display: none;
   min-width: unset;
   border-radius: 2px;
   position: relative;
   margin: 0;
   padding-inline-start: 36px;
-  height: auto;
-  min-height: 26px;
-  width: auto;
-  color: white;
   text-decoration: none !important;
 }
 .viewerEmbeded .toolbarTitle #downloadTag[href] {
@@ -2769,8 +2765,15 @@ dialog :link {
 .viewerEmbeded #viewerContainer {
   top: 62px;
 }
+#toolbarViewer {
+  border-left: 1px solid var(--body-bg-color);
+  border-right: 1px solid var(--body-bg-color);
+}
 .hidden {
   display: none !important;
+}
+#toolbarContainer.viewer_error {
+  display: none;
 }
 .viewer_error .pdfViewer:empty {
   max-width: 320px;
