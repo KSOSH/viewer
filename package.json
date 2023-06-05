@@ -4,7 +4,9 @@
 	"description": "Просмотр PDF, XLSX, DOCX файлов в браузере",
 	"main": "Gruntfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"inst": "npm i --legacy-peer-deps && bower install",
+		"build": "grunt -v"
 	},
 	"author": {
 		"name": "ProjectSoft",

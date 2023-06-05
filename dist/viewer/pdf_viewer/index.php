@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="google" content="notranslate">
 		<title>PDF.js viewer</title>
-		<link rel="stylesheet" href="pdf_main.css?cf5fa4f716e931623365d613b457bad5">
+		<link rel="stylesheet" href="pdf_main.css?cc630509e242256006283e58aa18d43f">
 		<link rel="resource" type="application/l10n" href="pdf.js/web/locale/locale.properties">
 	</head>
 	<body class="viewerEmbeded" tabindex="1">
@@ -289,6 +289,6 @@
 		<!-- End printContainer-->
 		<input class="hidden" id="fileInput" type="file">
 		<script src="pdf.js/build/pdf.js"></script>
-		<script src="pdf_viewer.js?cf5fa4f716e931623365d613b457bad5"></script>
+		<script src="pdf_viewer.js?cc630509e242256006283e58aa18d43f"></script>
 	</body>
 </html>

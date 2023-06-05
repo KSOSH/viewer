@@ -15,7 +15,7 @@
 		<div id="document-wrapper">
 			<div class="overflow-auto flex-grow-1 h-100" id="document-container"></div>
 		</div>
-		<link type="text/css" rel="stylesheet" href="docx_main.min.css?7a14a3ec9223798876b430e90b5b2aa8">
-		<script src="docx_viewer.min.js?7a14a3ec9223798876b430e90b5b2aa8"></script>
+		<link type="text/css" rel="stylesheet" href="docx_main.min.css?cc133fc02611eafe22183c031d0b2a5b">
+		<script src="docx_viewer.min.js?cc133fc02611eafe22183c031d0b2a5b"></script>
 	</body>
 </html>
