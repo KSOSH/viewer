@@ -4,7 +4,7 @@ html(lang="ru")
 		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 		meta(name='google' content='notranslate')
 		title Viewers TEST
-		link(rel="stylesheet" href="app.css")
+		link(rel="stylesheet" href="app.min.css?" + hash)
 	body
 		h2
 			|PDF Files Test
@@ -51,4 +51,4 @@ html(lang="ru")
 			li
 				a(href="assets/docx/not_found.docx" target="_blank")
 					|Link Not Found DOCX file
-		script(src="app.js")
+		script(src="app.min.js?" + hash)

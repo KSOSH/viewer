@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 			/**
 			 * xlsx_viewer
 			 */
-			main: {
+			xlsx_viewer: {
 				src: [
 					'bower_components/js-xlsx/dist/shim.min.js',
 					'bower_components/js-xlsx/dist/xlsx.full.min.js',
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
 						dest: 'dist',
 						filter: 'isFile',
 						rename: function (dst, src) {
-							return dst + '/' + 'appjs.min.js';
+							return dst + '/' + 'app.min.js';
 						}
 					},
 					/**

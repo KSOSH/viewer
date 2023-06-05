@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="google" content="notranslate">
 		<title>Viewers TEST</title>
-		<link rel="stylesheet" href="app.css">
+		<link rel="stylesheet" href="app.min.css?fafb5565a6254ea763f5442fa145fb33">
 	</head>
 	<body>
 		<h2>PDF Files Test</h2>
@@ -28,6 +28,6 @@
 			<li><a href="assets/docx/0003.docx" target="_blank">Link DOCX</a></li>
 			<li><a href="assets/docx/not_found.docx" target="_blank">Link Not Found DOCX file</a></li>
 		</ul>
-		<script src="app.js"></script>
+		<script src="app.min.js?fafb5565a6254ea763f5442fa145fb33"></script>
 	</body>
 </html>
