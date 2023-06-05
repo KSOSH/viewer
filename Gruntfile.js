@@ -57,7 +57,33 @@ module.exports = function(grunt) {
 					'src/pdf_viewer/js/pdf.js'
 				],
 				dest: 'dist/viewer/pdf_viewer/pdf_viewer.js'
-			}
+			},
+			/**
+			 * docx_viewer
+			 */
+			docx_viewer: {
+				src: [
+					'src/all/js/textversion.js',
+					'src/docx_viewer/js/core-js-bundle.js',
+					'src/docx_viewer/js/jszip.js',
+					'bower_components/docxjs/dist/docx-preview.js',
+					'src/docx_viewer/js/main.js'
+				],
+				dest: 'dist/viewer/docx_viewer/docx_viewer.js'
+			},
+			/**
+			 * xlsx_viewer
+			 */
+			main: {
+				src: [
+					'bower_components/js-xlsx/dist/shim.min.js',
+					'bower_components/js-xlsx/dist/xlsx.full.min.js',
+					'bower_components/x-spreadsheet/dist/xspreadsheet.js',
+					'src/xlsx_viewer/js/locale/ru.js',
+					'src/xlsx_viewer/js/main.js'
+				],
+				dest: 'dist/viewer/xlsx_viewer/xlsx_viewer.js'
+			},
 		},
 		uglify: {
 			options: {
@@ -94,7 +120,37 @@ module.exports = function(grunt) {
 						rename: function (dst, src) {
 							return dst + '/' + 'appjs.min.js';
 						}
-					}
+					},
+					/**
+					 * docx_viewer
+					 */
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'dist/viewer/docx_viewer/docx_viewer.js'
+						],
+						dest: 'dist/viewer/docx_viewer/',
+						filter: 'isFile',
+						rename: function (dst, src) {
+							return dst + '/' + src.replace('.js', '.min.js');
+						}
+					},
+					/**
+					 * xlsx_viewer
+					 */
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'dist/viewer/xlsx_viewer/xlsx_viewer.js'
+						],
+						dest: 'dist/viewer/xlsx_viewer/',
+						filter: 'isFile',
+						rename: function (dst, src) {
+							return dst + '/' + src.replace('.js', '.min.js');
+						}
+					},
 				]
 			}
 		},
@@ -117,6 +173,18 @@ module.exports = function(grunt) {
 					'test/css/pdf_main.css' : [
 						'src/pdf_viewer/less/pdf.css',
 						'src/pdf_viewer/less/pdf_main.less'
+					],
+					/**
+					 * docx_viewer
+					 */
+					'test/css/docx_main.css' : [
+						'src/docx_viewer/less/docx.less'
+					],
+					/**
+					 * xlsx_viewer
+					 */
+					'test/css/xlsx_main.css' : [
+						'src/xlsx_viewer/less/xlsx.less'
 					],
 					/**
 					 * all.less
@@ -144,6 +212,18 @@ module.exports = function(grunt) {
 						'test/css/pdf_main.css'
 					],
 					/**
+					 * docx_viewer
+					 */
+					'test/css/docx/prefix.docx_main.css' : [
+						'test/css/docx_main.css'
+					],
+					/**
+					 * xlsx_viewer
+					 */
+					'test/css/xlsx/prefix.xlsx_main.css' : [
+						'test/css/xlsx_main.css'
+					],
+					/**
 					 * All style sheet 
 					 */
 					'test/css/prefix.app.css' : [
@@ -161,6 +241,18 @@ module.exports = function(grunt) {
 					//'test/css/media/pdf_main.css': [
 					//	'test/css/prefix.pdf_main.css'
 					//],
+					/**
+					 * docx_viewer
+					 */
+					'test/css/media/docx_main.css': [
+						'test/css/docx/prefix.docx_main.css'
+					],
+					/**
+					 * xlsx_viewer
+					 */
+					'test/css/media/xlsx_main.css': [
+						'test/css/xlsx/prefix.xlsx_main.css'
+					],
 					/**
 					 * All style sheet 
 					 */
@@ -205,6 +297,48 @@ module.exports = function(grunt) {
 						filter: 'isFile'
 					},
 					/**
+					 * docx_viewer
+					 */
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/media/docx_main.css'
+						],
+						dest: 'test/css/replace/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/media/docx_main.css'
+						],
+						dest: 'dist/viewer/docx_viewer/',
+						filter: 'isFile'
+					},
+					/**
+					 * xlsx_viewer
+					 */
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/media/xlsx_main.css'
+						],
+						dest: 'test/css/replace/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/media/xlsx_main.css'
+						],
+						dest: 'dist/viewer/xlsx_viewer/',
+						filter: 'isFile'
+					},
+					/**
 					 * All style sheet 
 					 */
 					{
@@ -240,6 +374,18 @@ module.exports = function(grunt) {
 					 */
 					'dist/viewer/pdf_viewer/pdf_main.min.css': [
 						'test/css/replace/pdf_main.css'
+					],
+					/**
+					 * docx_viewer
+					 */
+					'dist/viewer/docx_viewer/docx_main.min.css': [
+						'test/css/replace/docx_main.css'
+					],
+					/**
+					 * xlsx_viewer
+					 */
+					'dist/viewer/xlsx_viewer/xlsx_main.min.css': [
+						'test/css/replace/xlsx_main.css'
 					],
 					/**
 					 * All style sheet 

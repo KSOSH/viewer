@@ -1,0 +1,28 @@
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+.fancybox {
+	&-content {
+		&.docx,
+		&.xlsx {
+			&_viewer {
+				height: 100% !important;
+				max-height: 100% !important;
+			}
+		}
+	}
+}
+.fancybox-toolbar {
+	opacity: 1 !important;
+	transition: opacity .25s ease 0s,visibility 0s ease 0s;
+	visibility: visible !important;
+}

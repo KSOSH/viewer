@@ -780,6 +780,14 @@ body.compensate-for-scrollbar {
 .fancybox-thumbs__list a.fancybox-thumbs-active::before {
   opacity: 1;
 }
+.fancybox-content.xlsx_viewer,
+.fancybox-content.docx_viewer {
+  height: 100% !important;
+  overflow: visible;
+  padding: 0;
+  width: 100% !important;
+}
+
 @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;

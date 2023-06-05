@@ -1,0 +1,106 @@
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+body {
+	padding-top: 2.5em;
+	background-color: rgba(42, 42, 46, 1);
+}
+.docx {
+	table {
+		a {
+			word-break: break-all !important;
+		}
+	}
+}
+.title-bar {
+	position: fixed;
+	width: 100%;
+	font-family: Consolas, "Courier New", monospace !important;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 5px 15px;
+	top: 0;
+	background-color: #000;
+	color: #fff;
+	z-index: 100;
+	min-height: 36px;
+    align-items: center;
+    line-height: 1;
+	#title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	#download {
+		color: white !important;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		padding-left: 10px;
+		&::before {
+			content: "";
+			background-image: data-uri("../images/download.svg");
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 17px;
+			height: 17px;
+			display: block;
+			filter: invert(1);
+			margin-right: 10px;
+		}
+		&:not([href]){
+			display: none;
+		}
+	}
+}
+.docx-wrapper {
+	display: block;
+	padding: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(42, 42, 46, 1);
+	.docx {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+#document-container {
+	&.error-load {
+		//min-height: ~'calc(100vh - 2.5em)';
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: data-uri("../images/icon_error.png");
+		background-size: 350px 350px;
+		@media(max-width: 500px) {
+			background-size: contain;
+		}
+	}
+}
+#document-wrapper {
+	height: 100%;
+	overflow: auto;
+	&.error-load {
+		min-height: ~'calc(100vh - 2.5em)';
+		height: 100%;
+		position: relative;
+		padding: 15px;
+		#document-container {
+			position: relative;
+			height: 100%;
+		}
+	}
+	
+}

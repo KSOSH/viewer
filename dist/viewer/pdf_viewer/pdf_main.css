@@ -2775,8 +2775,11 @@ dialog :link {
 #toolbarContainer.viewer_error {
   display: none;
 }
+#viewerContainer.viewer_error {
+  padding: 15px;
+}
 .viewer_error .pdfViewer:empty {
-  max-width: 320px;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   background-size: contain !important;

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html dir="ltr" mozdisallowselectionprint>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="google" content="notranslate">
 		<title>PDF.js viewer</title>
-		<link rel="stylesheet" href="pdf_main.css?b8675fb47c7e67890fbdcfb49d530dee">
+		<link rel="stylesheet" href="pdf_main.css?d55b1d15303145070b2cc8342f434bbd">
 		<link rel="resource" type="application/l10n" href="pdf.js/web/locale/locale.properties">
 	</head>
 	<body class="viewerEmbeded" tabindex="1">
@@ -288,6 +289,6 @@
 		<!-- End printContainer-->
 		<input class="hidden" id="fileInput" type="file">
 		<script src="pdf.js/build/pdf.js"></script>
-		<script src="pdf_viewer.js?b8675fb47c7e67890fbdcfb49d530dee"></script>
+		<script src="pdf_viewer.js?d55b1d15303145070b2cc8342f434bbd"></script>
 	</body>
 </html>
