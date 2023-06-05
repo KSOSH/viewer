@@ -63,11 +63,11 @@ module.exports = function(grunt) {
 			 */
 			docx_viewer: {
 				src: [
-					'src/all/js/textversion.js',
 					'src/docx_viewer/js/core-js-bundle.js',
 					'src/docx_viewer/js/jszip.js',
 					'bower_components/docxjs/dist/docx-preview.js',
-					'src/docx_viewer/js/main.js'
+					'src/all/js/textversion.js',
+					'src/docx_viewer/js/docx.js'
 				],
 				dest: 'dist/viewer/docx_viewer/docx_viewer.js'
 			},
@@ -79,8 +79,9 @@ module.exports = function(grunt) {
 					'bower_components/js-xlsx/dist/shim.min.js',
 					'bower_components/js-xlsx/dist/xlsx.full.min.js',
 					'bower_components/x-spreadsheet/dist/xspreadsheet.js',
+					'src/all/js/textversion.js',
 					'src/xlsx_viewer/js/locale/ru.js',
-					'src/xlsx_viewer/js/main.js'
+					'src/xlsx_viewer/js/xlsx.js'
 				],
 				dest: 'dist/viewer/xlsx_viewer/xlsx_viewer.js'
 			},
@@ -94,18 +95,6 @@ module.exports = function(grunt) {
 			},
 			app: {
 				files: [
-					//{
-					//	expand: true,
-					//	flatten : true,
-					//	src: [
-					//		'test/js/main.js'
-					//	],
-					//	dest: '<%= globalConfig.assets %>',
-					//	filter: 'isFile',
-					//	rename: function (dst, src) {
-					//		return dst + '/' + src.replace('.js', '.min.js');
-					//	}
-					//},
 					/**
 					 * App.js
 					 */
@@ -235,12 +224,6 @@ module.exports = function(grunt) {
 		group_css_media_queries: {
 			app: {
 				files: {
-					/**
-					 * pdf_viewer
-					 */
-					//'test/css/media/pdf_main.css': [
-					//	'test/css/prefix.pdf_main.css'
-					//],
 					/**
 					 * docx_viewer
 					 */
@@ -502,6 +485,9 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
+			app: [
+				'dist/**/*'
+			],
 			pdf_viewer: [
 				'dist/viewer/pdf_viewer/pdf.js/web/debugger.css',
 				'dist/viewer/pdf_viewer/pdf.js/web/debugger.js',
@@ -513,6 +499,7 @@ module.exports = function(grunt) {
 		},
 	});
 	grunt.registerTask('default', [
+		'clean:app',
 		'copy',
 		'concat',
 		'uglify',
@@ -522,6 +509,6 @@ module.exports = function(grunt) {
 		'replace',
 		'cssmin',
 		'pug',
-		'clean'
+		'clean:pdf_viewer'
 	]);
 }

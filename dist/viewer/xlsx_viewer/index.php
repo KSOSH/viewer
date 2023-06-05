@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Предпросмотр Microsoft Office Excel (xls, xlsx) файлов</title>
 		<link rel="shortcut icon" href="/favicon.ico">
-		<link type="text/css" rel="stylesheet" href="xlsx_main.css?0d93fda4d675fb9a8866076e09a340a8">
+		<link type="text/css" rel="stylesheet" href="xlsx_main.css?a9e31b0e5b4a74bdf99b5aad6a6db0c1">
 	</head>
 	<body>
 		<div class="header">
@@ -21,6 +21,6 @@
 			</div>
 		</div>
 		<div class="footer"></div>
-		<script type="text/javascript" src="xlsx_viewer.js?0d93fda4d675fb9a8866076e09a340a8"></script>
+		<script type="text/javascript" src="xlsx_viewer.js?a9e31b0e5b4a74bdf99b5aad6a6db0c1"></script>
 	</body>
 </html>
