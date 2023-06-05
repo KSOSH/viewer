@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 			pdf_viewer: {
 				src: [
 					'src/all/js/textversion.js',
-					'src/js/pdfviewer.js'
+					'src/pdf_viewer/js/pdf.js'
 				],
 				dest: 'dist/viewer/pdf_viewer/ppdf_viewer.js'
 			}
@@ -111,9 +111,13 @@ module.exports = function(grunt) {
 					}
 				},
 				files : {
-					//'test/css/main.css' : [
-					//	'src/less/main.less'
-					//],
+					/**
+					 * pdf_viewer
+					 */
+					'test/css/pdf_main.css' : [
+						'src/pdf_viewer/less/pdf.css',
+						'src/pdf_viewer/less/pdf_main.less'
+					],
 					/**
 					 * all.less
 					 */
@@ -133,9 +137,12 @@ module.exports = function(grunt) {
 			},
 			app: {
 				files: {
-					//'test/css/prefix.main.css' : [
-					//	'test/css/main.css'
-					//],
+					/**
+					 * pdf_viewer
+					 */
+					'test/css/pdf/pdf_main.css' : [
+						'test/css/pdf_main.css'
+					],
 					/**
 					 * All style sheet 
 					 */
@@ -148,7 +155,12 @@ module.exports = function(grunt) {
 		group_css_media_queries: {
 			app: {
 				files: {
-				//	'test/css/media/main.css': ['test/css/prefix.main.css'],
+					/**
+					 * pdf_viewer
+					 */
+					//'test/css/media/pdf_main.css': [
+					//	'test/css/prefix.pdf_main.css'
+					//],
 					/**
 					 * All style sheet 
 					 */
@@ -171,15 +183,27 @@ module.exports = function(grunt) {
 					]
 				},
 				files: [
-					//{
-					//	expand: true,
-					//	flatten : true,
-					//	src: [
-					//		'test/css/media/main.css'
-					//	],
-					//	dest: 'test/css/replace/',
-					//	filter: 'isFile'
-					//},
+					/**
+					 * pdf_viewer
+					 */
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/pdf/pdf_main.css'
+						],
+						dest: 'test/css/replace/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'test/css/pdf/pdf_main.css'
+						],
+						dest: 'dist/viewer/pdf_viewer/',
+						filter: 'isFile'
+					},
 					/**
 					 * All style sheet 
 					 */
@@ -211,15 +235,18 @@ module.exports = function(grunt) {
 			},
 			app: {
 				files: {
-					//'<%= globalConfig.assets %>/main.min.css' : ['test/css/replace/main.css'],
+					/**
+					 * pdf_viewer
+					 */
+					'dist/viewer/pdf_viewer/pdf_main.min.css': [
+						'test/css/replace/pdf_main.css'
+					],
 					/**
 					 * All style sheet 
 					 */
-					'dist/app.min.css' : ['dist/app.css'],
-					//'dist/viewer/pdf_viewer/pdf.js/web/pdfviewer.css': [
-					//	'src/less/pdfviewer.css',
-					//	'test/css/replace/main.css'
-					//]
+					'dist/app.min.css' : [
+						'dist/app.css'
+					],
 				}
 			}
 		},
