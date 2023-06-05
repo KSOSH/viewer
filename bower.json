@@ -1,24 +1,24 @@
 {
-  "name": "viewers",
-  "description": "Просмотр PDF, XLSX, DOCX файлов в браузере",
-  "main": "Gruntfile.js",
-  "authors": [
-    "ProjectSoft <projectsoft2009@yandex.ru>"
-  ],
-  "license": "MIT",
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "docxjs": "https://github.com/VolodymyrBaydalka/docxjs.git#^0.1.15",
-    "js-xlsx": "https://github.com/SheetJS/sheetjs.git#^0.18.5",
-    "jquery": "^3.7.0",
-    "fancybox": "https://github.com/fancyapps/fancybox.git#^3.5.7",
-    "x-spreadsheet": "https://github.com/myliang/x-spreadsheet.git#^1.1.7"
-  }
+	"name": "viewers",
+	"description": "Просмотр PDF, XLSX, DOCX файлов в браузере",
+	"main": "Gruntfile.js",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "MIT",
+	"homepage": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"docxjs": "https://github.com/VolodymyrBaydalka/docxjs.git#^0.1.15",
+		"js-xlsx": "https://github.com/SheetJS/sheetjs.git#^0.18.5",
+		"jquery": "^3.7.0",
+		"fancybox": "https://github.com/fancyapps/fancybox.git#^3.5.7",
+		"x-spreadsheet": "https://github.com/myliang/x-spreadsheet.git#^1.1.7"
+	}
 }
